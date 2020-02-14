@@ -129,8 +129,6 @@ class GuaranteedDefsAnalysis extends ForwardFlowAnalysis {
 
         // Initial empty GEN set
         unitToGenerateSet = new HashMap<Unit, FlowSet>(graph.size() * 2 + 1, 0.7f);
-        // Initial empty DEFS set
-        Map<Local, FlowSet> DEFS = new HashMap<Local, FlowSet>();
 
         // TODO: collect defs for this unit
 
